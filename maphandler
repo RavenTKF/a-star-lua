@@ -1,6 +1,7 @@
-maphandler = maphandler or BaseClass()
-function maphandler:__init()
-maphandler.Instance = self
+require "BaseClass"
+Maphandler = Maphandler or BaseClass()
+function Maphandler:__init()
+Maphandler.Instance = self
 self.graph = {}
 self.graph [ 1 ] = {}
 self.graph [ 1 ].id = 1
@@ -9604,24 +9605,23 @@ self.graph3 [ 400 ].y = -9.5
 self.graph3 [ 400 ].player_id = 1
 self.graph3 [ 400 ].is_water = 0
 
-
 end
 
-function maphandler:getInstance()
-	if maphandler.Instance == nil then
-		maphandler.New()
+function Maphandler:getInstance()
+	if Maphandler.Instance == nil then
+		Maphandler.New()
 	end
-	return maphandler.Instance
+	return Maphandler.Instance
 end
 
-function maphandler:GetMap1()
+function Maphandler:GetMap1()
 	return self.graph
 end
 
-function maphandler:GetMap2()
+function Maphandler:GetMap2()
 	return self.graph2
 end
 
-function maphandler:GetMap3()
+function Maphandler:GetMap3()
 	return self.graph3
 end
