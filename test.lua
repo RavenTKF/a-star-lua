@@ -33,7 +33,9 @@ local graph1 = maphandler:GetMap1()
 local graph2 = maphandler:GetMap2()
 local graph3 = maphandler:GetMap3()
 
-local path = astar:path ( graph3 [ astar:getNodeID(-2.21,9.46) ], graph3 [ astar:getNodeID(6.49,-8.51) ], graph3, true, valid_node_func )
+local ignore = true
+
+local path = astar:path ( graph3 [ astar:getNodeID(-2.21,9.46) ], graph3 [ astar:getNodeID(6.49,-8.51) ], graph3, ignore, valid_node_func )
 
 if not path then
 	print ( "No valid path found" )
