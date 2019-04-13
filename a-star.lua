@@ -23,6 +23,7 @@
 -- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 -- SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -- ======================================================================
+require "BaseClass"
 astar = astar or BaseClass()
 
 function astar:__init()
@@ -192,8 +193,8 @@ function astar:path ( start, goal, nodes, ignore_cache )
 	return resPath
 end
 
-function astar:getNodeID ( x, y )          --using in 20x20 map (x:[-10,10] y:[-10,10])
-	local x_n = math.ceil((x+10)/1)    
+function astar:getNodeID ( x, y )
+	local x_n = math.ceil((x+10)/1)
 	if x_n == 0 then
 		x_n = x_n +1
 	end
