@@ -1,5 +1,6 @@
 A* for Lua
 ==========
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/RavenTKF/a-star-lua/blob/master/LICENSE)
 
 A clean, simple implementation of the A* pathfinding algorithm for Lua.
 
