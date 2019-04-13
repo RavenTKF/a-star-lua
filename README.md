@@ -55,7 +55,7 @@ The module automatically caches paths which saves CPU time for frequently access
 			x_n = x_n +1
 		end
 
-	local y_n = math.ceil(math.abs(y-10)/1)
+		local y_n = math.ceil(math.abs(y-10)/1)
 		if y_n == 0 then
 			y_n = y_n +1
 		end
